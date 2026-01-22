@@ -67,36 +67,44 @@
 
     </div>
   </nav>
-    <section class="container-fluid px-0">
-    <div
-        class="d-flex align-items-center text-white"
-        style="
-        min-height: 120vh;
-        background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://unsplash.com/photos/a-large-machine-in-a-large-building-pWUyHVJgLhg');
-        background-size: cover;
-        background-position: center;
-        "
-    >
-        <div class="container">
-        <div class="col-lg-8">
-            <h1 class="display-4 fw-bold mb-4">
+ <section class="container-fluid px-0">
+  <div
+    class="d-flex align-items-center text-white pt-5"
+    style="
+      background-image:
+        linear-gradient(rgba(8,20,40,0.65), rgba(8,20,40,0.65)),
+        url('Background.jpg');
+      background-size: cover;
+      background-position: center;
+    ">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-7">
+
+          <h1 class="display-4 fw-bold mb-4" style="font-family: 'BearingPointSans', 'FS Albert', Calibri, Helvetica, 'Trebuchet MS', Arial, sans-serif;">
             We transform businesses<br>
             using technology intelligently
-            </h1>
+          </h1>
 
-            <p class="fs-5 lh-lg">
+          <p class="fs-5 lh-lg mb-4 text-light">
             Transformation starts with intelligence — human, sharp, and purpose-driven.
             We apply it to what matters most: bold differentiation, lasting client impact,
             global resonance, and the power of people.
-            </p>
+          </p>
 
-            <p class="fs-5">
+          <p class="fs-5 text-light mb-5">
             Welcome to your future management and technology consulting partner.
-            </p>
+          </p>
+
+          <a href="#services" class="btn btn-outline-light px-4 py-2 text-uppercase fw-medium">
+            Explore our work
+          </a>
+
         </div>
-        </div>
+      </div>
     </div>
-    </section>
+  </div>
+</section>
 
     <section class="bg-white border-bottom">
   <div class="container py-5">
@@ -137,59 +145,88 @@
       </h2>
     </div>
 
-    <div class="row g-4">
+    <!-- Carousel -->
+    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
 
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <a href="#industry"
-           class="text-decoration-none d-block p-3"
-           style="background-color:#0b1f33;"
-           onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#0b1f33';"
-           onmouseout="this.style.backgroundColor='#0b1f33'; this.style.color='#ffffff';">
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
 
-          <img src="Background.jpg" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semibold">Industry expertise →</h5>
-          <p>
-            Deep industry insights and knowledge based on decades of executive advisory work.
-          </p>
-        </a>
+            <div class="col-md-4">
+              <a href="#industry" class="service-card">
+                <img src="Background.jpg" class="img-fluid mb-3" alt="">
+                <h5 class="fw-semibold">Industry expertise →</h5>
+                <p>Deep industry insights and executive advisory experience.</p>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#capabilities" class="service-card">
+                <img src="Background.jpg" class="img-fluid mb-3" alt="">
+                <h5 class="fw-semibold">Capabilities →</h5>
+                <p>Transforming how organizations operate and deliver.</p>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#tech-ai" class="service-card">
+                <img src="Background.jpg" class="img-fluid mb-3" alt="">
+                <h5 class="fw-semibold">Tech & AI →</h5>
+                <p>Modern platforms, AI at scale, new growth engines.</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SLIDE 2 (add more cards here) -->
+        <div class="carousel-item">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <a href="#strategy" class="service-card">
+                <img src="Background.jpg" class="img-fluid mb-3" alt="">
+                <h5 class="fw-semibold">Cheesey →</h5>
+                <p>Clear direction backed by data and execution.</p>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#operations" class="service-card">
+                <img src="Background.jpg" class="img-fluid mb-3" alt="">
+                <h5 class="fw-semibold">Iyeyyeyeys →</h5>
+                <p>Efficiency, scale, and performance optimization.</p>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#growth" class="service-card">
+                <img src="Background.jpg" class="img-fluid mb-3" alt="">
+                <h5 class="fw-semibold">Moneyy →</h5>
+                <p>New markets, new products, sustainable expansion.</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <a href="#capabilities"
-           class="text-decoration-none d-block p-3"
-           style="background-color:#0b1f33;"
-           onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#0b1f33';"
-           onmouseout="this.style.backgroundColor='#0b1f33'; this.style.color='#ffffff';">
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
 
-          <img src="Background.jpg" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semibold">Capabilities →</h5>
-          <p>
-            Practical experience transforming how organizations operate and deliver.
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <a href="#tech-ai"
-           class="text-decoration-none d-block p-3"
-           style="background-color:#0b1f33;"
-           onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#0b1f33';"
-           onmouseout="this.style.backgroundColor='#0b1f33'; this.style.color='#ffffff';">
-
-          <img src="Background.jpg" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semibold">Tech & AI →</h5>
-          <p>
-            Unlocking AI at scale, modernizing platforms, and building new growth engines.
-          </p>
-        </a>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
 
     </div>
   </div>
 </section>
+
 
 <!-- Partners -->
 <section class="bg-light">
